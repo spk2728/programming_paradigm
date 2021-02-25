@@ -25,7 +25,6 @@ Pokemon Create(Type t, const char* name) {
     strcpy(p.name, name);
     p.hp = 20;
     p.atk = 1;
-
     return p;
 }
 
@@ -33,8 +32,10 @@ Pokemon Create(Type t, const char* name) {
  * Rests and recovers 1 hp.
  */
 void Rest(Pokemon* p) {
+    printf("%s rested for a while.\n", p->name);
     p->hp = p->hp + 1;
-    printf("%s rested and HP restored to %d.\n", p->name, p->hp);
+    printf("%s HP is restored to %d (+%d).\n", p->name, p->hp, 1);
+    printf("\n");
 }
 
 /**
@@ -42,8 +43,7 @@ void Rest(Pokemon* p) {
  */
 void TakeDamge(Pokemon* p, int dmg) {
     p->hp = p->hp - dmg;
-    printf("%s received %d damage and HP reduced to %d.\n", p->name, dmg,
-           p->hp);
+    printf("%s HP is reduced to %d (-%d).\n", p->name, p->hp, dmg);
 }
 
 /**
@@ -52,6 +52,7 @@ void TakeDamge(Pokemon* p, int dmg) {
 void Attack(Pokemon* p, Pokemon* other) {
     printf("%s attacked %s!\n", p->name, other->name);
     TakeDamge(other, p->atk);
+    printf("\n");
 }
 
 /**
@@ -70,5 +71,4 @@ int main() {
     Attack(&b, &a);
     Attack(&a, &b);
     Rest(&b);
-    printf("\n");
 }
