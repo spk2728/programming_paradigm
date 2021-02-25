@@ -23,7 +23,6 @@ int main() {
     b.Attack(&a);
     a.Attack(&b);
     b.Rest();
-    printf("\n");
 
     // ERROR: cannot access private or protected members
     // a.hp = 100;
@@ -31,8 +30,8 @@ int main() {
 
     /***************************************************************************
      * Inheritance:
-     * - A subclass inherites all members from it's superclass.
-     * - This facilitate the reuse of code.
+     * - A subclass (child) inherites all members from it's superclass (parent).
+     * - This facilitates the reuse of code.
      * - A subclass can add new members and methods, and override existing
      *   methods.
      **************************************************************************/
@@ -42,18 +41,15 @@ int main() {
     // Create object of subclass with differnt atk
     Squirtle s("Squirtle");
     s.Attack(&b);
-    printf("\n");
 
     // Create object of subclass with new methods
     Pikachu p("Pikachu");
     p.Attack(&b);
     p.Thunderbolt(&b);
-    printf("\n");
 
     // Create object of subclass which overrides existing methods
     Charmander c("Charmander");
     c.Attack(&b);
-    printf("\n");
 
     /***************************************************************************
      * Polymorphism:
@@ -64,16 +60,12 @@ int main() {
     printf("\n>>> Round 3 <<<\n\n");
 
     // Superclass variable can hold objects of its subclasses
-    Pokemon *list[3];
-    list[0] = &s;
-    list[1] = &p;
-    list[2] = &c;
+    Pokemon *list[3] = {&s, &p, &c};
 
     // When the method is called, it uses the suitable method based on its
     // actually class. (called dynamic binding)
     a.Rest();
     for (int i = 0; i < 3; i++) {
-        (*list[i]).Attack(&a);
-        printf("\n");
+        list[i]->Attack(&a);
     }
 }

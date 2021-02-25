@@ -10,16 +10,19 @@ Pokemon::Pokemon(const char* s) {
 }
 
 void Pokemon::Rest() {
+    printf("%s rested for a while.\n", name);
     hp = hp + 1;
-    printf("%s rested and HP restored to %d.\n", name, hp);
+    printf("%s HP is restored to %d (+%d).\n", name, hp, 1);
+    printf("\n");
 }
 
 void Pokemon::TakeDamge(int dmg) {
     hp = hp - dmg;
-    printf("%s HP reduced to %d (-%d).\n", name, hp, dmg);
+    printf("%s HP is reduced to %d (-%d).\n", name, hp, dmg);
 }
 
 void Pokemon::Attack(Pokemon* other) {
     printf("%s attacked %s!\n", name, other->name);
     other->TakeDamge(atk);
+    printf("\n");
 }
