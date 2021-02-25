@@ -1,7 +1,7 @@
 #include <cstdio>
 #include <cstring>
 
-#include "pokemon.h"
+#include "basic.h"
 
 Squirtle::Squirtle(const char* s) : Pokemon(s) {
     atk = 3;  // modify initial stat

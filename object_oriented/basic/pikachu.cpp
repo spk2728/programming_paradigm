@@ -1,7 +1,7 @@
 #include <cstdio>
 #include <cstring>
 
-#include "pokemon.h"
+#include "basic.h"
 
 Pikachu::Pikachu(const char* s) : Pokemon(s) {}
 

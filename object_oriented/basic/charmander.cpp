@@ -1,7 +1,7 @@
 #include <cstdio>
 #include <cstring>
 
-#include "pokemon.h"
+#include "basic.h"
 
 Charmander::Charmander(const char* s) : Pokemon(s) {}
 

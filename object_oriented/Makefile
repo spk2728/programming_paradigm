@@ -7,10 +7,11 @@ main: pokemon.o squirtle.o pikachu.o charmander.o
 		g++ pokemon.o squirtle.o pikachu.o charmander.o main.cpp -o main
 
 pokemon.o:
-		g++ -c pokemons/pokemon.cpp
+		g++ -c pokemon.cpp
+
 squirtle.o:
-		g++ -c pokemons/squirtle.cpp
+		g++ -c basic/squirtle.cpp
 pikachu.o:
-		g++ -c pokemons/pikachu.cpp
+		g++ -c basic/pikachu.cpp
 charmander.o:
-		g++ -c pokemons/charmander.cpp
+		g++ -c basic/charmander.cpp

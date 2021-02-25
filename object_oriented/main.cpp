@@ -1,6 +1,7 @@
 #include <cstdio>
 
-#include "pokemons/pokemon.h"
+#include "basic/basic.h"
+#include "pokemon.h"
 
 int main() {
     printf("Game start!\n");
