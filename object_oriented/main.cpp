@@ -65,7 +65,6 @@ int main() {
 
     // When the method is called, it uses the suitable method based on its
     // actually class. (called dynamic binding)
-    a.Rest();
     for (int i = 0; i < 3; i++) {
         list[i]->Attack(&a);
     }
