@@ -62,11 +62,11 @@ int main() {
     printf("Game start!\n");
     printf("\n>>> Round 1 <<<\n\n");
 
-    // Create object
+    // Create struct
     Pokemon a = Create(POKEMON, "Pokemon A");
     Pokemon b = Create(POKEMON, "Pokemon B");
 
-    // Call public methods
+    // Call pokemon functions
     Attack(&a, &b);
     Attack(&b, &a);
     Attack(&a, &b);
