@@ -1,13 +1,17 @@
 %-------------------------------------------------------------------------------
-% SWISH Online Prolog Interpreter
-% https://swish.swi-prolog.org/
+% The following practice code is borrowed from Tutorialspoint
+% Ref: https://www.tutorialspoint.com/prolog/prolog_relations.htm
 %
-% Learn Prolog Now!
-% https://lpn.swi-prolog.org/lpnpage.php?pageid=online
+% Online Prolog Interpreter:
+% - SWISH
+%   https://swish.swi-prolog.org/
 %
-% Tutorialspoint
-% https://www.tutorialspoint.com/prolog/index.htm
+% Tutorials:
+% - Learn Prolog Now!
+%   https://lpn.swi-prolog.org/lpnpage.php?pageid=online
 %
+% - Tutorialspoint
+%   https://www.tutorialspoint.com/prolog/index.htm
 %-------------------------------------------------------------------------------
 
 
