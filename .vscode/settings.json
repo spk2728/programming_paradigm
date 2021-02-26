@@ -1,4 +1,7 @@
 {
   "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4 }",
   "editor.formatOnSave": true,
+  "files.associations": {
+    "cstring": "cpp"
+  },
 }
