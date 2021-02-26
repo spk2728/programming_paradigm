@@ -11,7 +11,7 @@ class Squirtle : public Pokemon {
 };
 
 /**
- * Pikachu has a special attack "Thunderbolt" which causes 10 dmg.
+ * Pikachu has a special attack "Thunderbolt" which deals 10 dmg.
  */
 class Pikachu : public Pokemon {
    public:

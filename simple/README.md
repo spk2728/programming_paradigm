@@ -10,6 +10,8 @@ In this practice, we will learn to
 
 ## Tasks
 
+### Task 1: Add header file and makefile
+
 1. Change working directory to `simple`
    
    ```sh
@@ -71,6 +73,12 @@ In this practice, we will learn to
    make clean
    make
    ```
+
+### Task 2: Add new pokemons
+
+1. Squirtle has default atk of 3 instead of 1
+2. Pikachu has a special attack "Thunderbolt" which deals 10 dmg.
+3. Charmander's normal attack has a DoT effect (3 dmg, 2 dmg, 1 dmg).
 
 ## Next step
 
